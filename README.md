@@ -47,14 +47,14 @@ Time spent: `5 hrs`
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. How I could use a for loop and/or array to animate those Reschedule circles with less code
+2. How to animate the status bar up out of the way (like when the menu is opened...it looks kinda janky)
 
 ### Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/richiehollins/MailboxDemo/blob/master/RH_Mailbox_Walkthru.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
