@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Mailbox View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MailboxViewController" customModule="MailboxDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uF4-7d-tfa" userLabel="greyBase">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" red="0.27055478096008301" green="0.27060747146606445" blue="0.27055147290229797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="H6k-4h-IJF">
+                                <rect key="frame" x="-80" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Lp-6X-Vn6" userLabel="MainPage">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aJI-Wt-OjX">
+                                        <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jHG-Fo-eUb" userLabel="messageHolder">
+                                                <rect key="frame" x="0.0" y="79" width="320" height="86"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="archive_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Bzi-5e-jXm">
+                                                        <rect key="frame" x="20" y="30" width="25" height="25"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="later_icon" translatesAutoresizingMaskIntoConstraints="NO" id="8Ra-BJ-icR">
+                                                        <rect key="frame" x="275" y="30" width="25" height="25"/>
+                                                    </imageView>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="message" translatesAutoresizingMaskIntoConstraints="NO" id="b33-9T-9Qz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="nXN-R0-k6c" appends="YES" id="ACR-V4-Rh6"/>
+                                                        </connections>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.79878151416778564" green="0.80288714170455933" blue="0.82308542728424072" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="feed" translatesAutoresizingMaskIntoConstraints="NO" id="Uvx-ut-2XE">
+                                                <rect key="frame" x="0.0" y="165" width="320" height="1202"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="hzb-uj-ZXG">
+                                                <rect key="frame" x="0.0" y="37" width="320" height="42"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="help_label" translatesAutoresizingMaskIntoConstraints="NO" id="Oxc-zA-khR">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="37"/>
+                                            </imageView>
+                                        </subviews>
+                                    </scrollView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gzr-39-rAl" userLabel="navBar">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="nav" translatesAutoresizingMaskIntoConstraints="NO" id="w9f-6D-Ueu">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
+                                            </imageView>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Egf-Kq-Ylk">
+                                                <rect key="frame" x="69" y="25" width="182" height="29"/>
+                                                <segments>
+                                                    <segment title="" image="archive_nav_icon"/>
+                                                    <segment title="" image="mail_nav_icon"/>
+                                                    <segment title="" image="later_nav_icon"/>
+                                                </segments>
+                                                <color key="tintColor" red="0.26841640472412109" green="0.72368645668029785" blue="0.87431645393371582" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </segmentedControl>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JU1-8Y-3wG" userLabel="HamburgerButton">
+                                                <rect key="frame" x="5" y="20" width="44" height="44"/>
+                                                <connections>
+                                                    <action selector="didTapHamburger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NDA-M1-jdv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V32-7j-dPF" userLabel="listViewHolder">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="3C9-4m-GtH">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBH-gL-wkp">
+                                                <rect key="frame" x="22" y="117" width="275" height="174"/>
+                                                <connections>
+                                                    <action selector="didTapListOption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j1S-yu-DnP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                    <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S16-SZ-Kee" userLabel="resceduleViewHolder">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="reschedule_blank" translatesAutoresizingMaskIntoConstraints="NO" id="Ueb-lz-cFI">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                            </imageView>
+                                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ICz-Il-9eG" userLabel="PickDateView">
+                                                <rect key="frame" x="192" y="412" width="131" height="139"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="date" translatesAutoresizingMaskIntoConstraints="NO" id="x2T-fx-kcG">
+                                                        <rect key="frame" x="31" y="20" width="72" height="72"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPu-AA-MDF">
+                                                        <rect key="frame" x="20" y="98" width="91" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </view>
+                                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iIf-fm-EJb" userLabel="DesktopView">
+                                                <rect key="frame" x="94" y="412" width="131" height="139"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="desktop" translatesAutoresizingMaskIntoConstraints="NO" id="uyz-Hs-0dg">
+                                                        <rect key="frame" x="30" y="20" width="72" height="72"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Desktop" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpu-Un-kmb">
+                                                        <rect key="frame" x="20" y="98" width="91" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </view>
+                                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gnS-tm-r9w" userLabel="InAMonthView">
+                                                <rect key="frame" x="193" y="292" width="131" height="139"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="inamonth" translatesAutoresizingMaskIntoConstraints="NO" id="kbm-N6-62C">
+                                                        <rect key="frame" x="30" y="20" width="72" height="72"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="In a Month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yX-d2-xDY">
+                                                        <rect key="frame" x="20" y="98" width="91" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </view>
+                                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hNp-0y-deZ" userLabel="NextWeekView">
+                                                <rect key="frame" x="94" y="292" width="131" height="140"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="nextweek" translatesAutoresizingMaskIntoConstraints="NO" id="Zs2-QT-uYx">
+                                                        <rect key="frame" x="30" y="20" width="72" height="72"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Next Week" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peU-Vx-aaY">
+                                                        <rect key="frame" x="20" y="99" width="91" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </view>
+                                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OPm-yl-iKU" userLabel="ThisEveningView">
+                                                <rect key="frame" x="95" y="172" width="130" height="139"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="thisevening" translatesAutoresizingMaskIntoConstraints="NO" id="B9S-JC-QOw">
+                                                        <rect key="frame" x="29" y="20" width="72" height="72"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This Evening" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzb-TF-hi8">
+                                                        <rect key="frame" x="20" y="98" width="90" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </view>
+                                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKH-Ul-VK5" userLabel="SomedayView">
+                                                <rect key="frame" x="-6" y="412" width="131" height="139"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="someday" translatesAutoresizingMaskIntoConstraints="NO" id="VWr-jg-0oj">
+                                                        <rect key="frame" x="31" y="20" width="72" height="72"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Someday" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRO-Jk-FEX">
+                                                        <rect key="frame" x="20" y="98" width="91" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </view>
+                                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LmH-p6-Bai" userLabel="ThisWeekendView">
+                                                <rect key="frame" x="-4" y="292" width="131" height="140"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="thisweekend" translatesAutoresizingMaskIntoConstraints="NO" id="dFH-3J-6Pv">
+                                                        <rect key="frame" x="29" y="20" width="72" height="72"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This Weekend" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtN-FW-Z0S">
+                                                        <rect key="frame" x="20" y="99" width="91" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </view>
+                                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFl-n3-JLF" userLabel="TomorrowView">
+                                                <rect key="frame" x="193" y="172" width="130" height="139"/>
+                                                <subviews>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="tomorrow" translatesAutoresizingMaskIntoConstraints="NO" id="SyX-F3-LMo">
+                                                        <rect key="frame" x="30" y="20" width="72" height="72"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tomorrow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aT4-XG-hxw">
+                                                        <rect key="frame" x="20" y="98" width="90" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </view>
+                                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m1c-H9-Dm4" userLabel="LaterTodayView">
+                                                <rect key="frame" x="-3" y="172" width="130" height="139"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Later Today" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TxZ-qL-PUU">
+                                                        <rect key="frame" x="20" y="98" width="90" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="latertoday" translatesAutoresizingMaskIntoConstraints="NO" id="04T-G9-Jcv">
+                                                        <rect key="frame" x="28" y="20" width="72" height="72"/>
+                                                    </imageView>
+                                                </subviews>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMl-OF-Z2s">
+                                                <rect key="frame" x="15" y="107" width="280" height="359"/>
+                                                <connections>
+                                                    <action selector="didTapRescheduleListOption:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iUy-B2-Xj2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sXK-6X-j7C" appends="YES" id="p6R-wx-wVY"/>
+                                    <outletCollection property="gestureRecognizers" destination="ViJ-cI-r15" appends="YES" id="QZd-Xu-YIi"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="archiveIcon" destination="Bzi-5e-jXm" id="xrh-wJ-Vjg"/>
+                        <outlet property="bigScrollView" destination="aJI-Wt-OjX" id="8xe-Hd-ZKN"/>
+                        <outlet property="desktopView" destination="iIf-fm-EJb" id="3Mv-zA-aKA"/>
+                        <outlet property="inAMonthView" destination="gnS-tm-r9w" id="bs9-7P-KD5"/>
+                        <outlet property="laterIcon" destination="8Ra-BJ-icR" id="MdE-MU-Q2S"/>
+                        <outlet property="laterTodayView" destination="m1c-H9-Dm4" id="bVC-LT-X7u"/>
+                        <outlet property="listView" destination="V32-7j-dPF" id="PZ5-YN-Vfw"/>
+                        <outlet property="messageHolder" destination="jHG-Fo-eUb" id="aOs-ct-etN"/>
+                        <outlet property="messageImageView" destination="b33-9T-9Qz" id="A11-bE-azH"/>
+                        <outlet property="nextWeekView" destination="hNp-0y-deZ" id="dhr-BT-gQA"/>
+                        <outlet property="pickDateView" destination="ICz-Il-9eG" id="t4H-1r-eRD"/>
+                        <outlet property="rescheduleViewHolder" destination="S16-SZ-Kee" id="bw3-5y-ebb"/>
+                        <outlet property="somedayView" destination="FKH-Ul-VK5" id="peN-It-Avy"/>
+                        <outlet property="theFeed" destination="Uvx-ut-2XE" id="dAo-A6-3Bp"/>
+                        <outlet property="theMainPage" destination="5Lp-6X-Vn6" id="2eI-GT-ipA"/>
+                        <outlet property="theMenu" destination="H6k-4h-IJF" id="Gf7-hU-MbP"/>
+                        <outlet property="thisEveningView" destination="OPm-yl-iKU" id="Oyp-QA-mq0"/>
+                        <outlet property="thisWeekendView" destination="LmH-p6-Bai" id="UIN-jS-3Wz"/>
+                        <outlet property="tomorrowView" destination="gFl-n3-JLF" id="gNz-IW-Hm5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="nXN-R0-k6c" userLabel="messageImageView Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="didPanOnMessageImageView:" destination="BYZ-38-t0r" id="XlT-KW-qu4"/>
+                    </connections>
+                </panGestureRecognizer>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="sXK-6X-j7C">
+                    <rectEdge key="edges" left="YES"/>
+                    <connections>
+                        <action selector="onEdgePan:" destination="BYZ-38-t0r" id="Cm9-Zn-adv"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ViJ-cI-r15" userLabel="MainPage Pan Gesture Recognizer">
+                    <connections>
+                        <action selector="onMainPagePan:" destination="BYZ-38-t0r" id="vVz-mK-S2Z"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="162" y="366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="archive_icon" width="25" height="25"/>
+        <image name="archive_nav_icon" width="25" height="20"/>
+        <image name="date" width="72" height="72"/>
+        <image name="desktop" width="72" height="72"/>
+        <image name="feed" width="320" height="1202"/>
+        <image name="help_label" width="320" height="37"/>
+        <image name="inamonth" width="72" height="72"/>
+        <image name="later_icon" width="25" height="25"/>
+        <image name="later_nav_icon" width="25" height="20"/>
+        <image name="latertoday" width="72" height="72"/>
+        <image name="list" width="320" height="568"/>
+        <image name="mail_nav_icon" width="25" height="20"/>
+        <image name="menu" width="320" height="568"/>
+        <image name="message" width="320" height="86"/>
+        <image name="nav" width="320" height="65"/>
+        <image name="nextweek" width="72" height="72"/>
+        <image name="reschedule_blank" width="320" height="568"/>
+        <image name="search" width="320" height="42"/>
+        <image name="someday" width="72" height="72"/>
+        <image name="thisevening" width="72" height="72"/>
+        <image name="thisweekend" width="72" height="72"/>
+        <image name="tomorrow" width="72" height="72"/>
+    </resources>
+</document>
